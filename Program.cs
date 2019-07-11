@@ -8,9 +8,9 @@ namespace CurrencyConverter
     {
         static void Main(string[] args)
         {
-            List<Currency> myList = Currency.ISO4217();
-            // Console.WriteLine(WebScapper.ReturnWebRateData());
-            Console.WriteLine(myList[0].CurrencyCode);
+            // List<Currency> myList = Currency.ISO4217();
+            Console.WriteLine(WebScapper.ReturnWebRateData());
+            // Console.WriteLine(myList[0].CurrencyCode);
         }
     }
 }

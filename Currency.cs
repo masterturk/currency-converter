@@ -413,19 +413,21 @@ namespace CurrencyConverter
         {
 
         }
+        */
 
-        // Converts one currency to another via the exchange rate from Yahoo
-        public static double GoogleConvert(Currency currency1, Currency currency2)
+        // Converts one currency to another via the Euro exchange rate from fixer.io
+        public static double ConvertCurrency(double currencyValue1, double currencyValue2)
         {
-
+            double convertedCurrency = (1 / currencyValue1) * currencyValue2;
+            return convertedCurrency;
         }
 
         // Default Currency Not Found Error
-        public static double CurrencyNotFound(string message)
+        public static string CurrencyNotFound(string message)
         {
-            return "";
+            return "The currency you requested could not be found at this time.";
         }
-        */
+        
 
     }
 }
