@@ -28,7 +28,7 @@ namespace CurrencyConverter
         public static void Help() {
             Console.WriteLine("All currencies have a 3 digit code, select the 'List' option to view the currenies and codes\n"+
             "provided by our API. To use the converter, select the 'Exchange' option, then type the code\n" +
-            "of your desired currency and the currency you would like to see the exchange rate of when promted.\n");
+            "of your desired currency and the currency you would like to see the exchange rate of when prompted.\n");
             Console.WriteLine("More information on codes can be found at https://www.countries-ofthe-world.com/world-currencies.html");
             Console.WriteLine("Press Enter to go Back");
             Console.ReadLine();
