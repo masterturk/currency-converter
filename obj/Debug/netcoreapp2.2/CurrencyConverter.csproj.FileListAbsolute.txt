@@ -20,3 +20,14 @@ C:\Users\IsaacCampbell\repos\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyC
 C:\Users\IsaacCampbell\repos\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.AssemblyInfo.cs
 C:\Users\IsaacCampbell\repos\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.dll
 C:\Users\IsaacCampbell\repos\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.pdb
+D:\Nick\VS Code\CurrencyConverter\bin\Debug\netcoreapp2.2\CurrencyConverter.deps.json
+D:\Nick\VS Code\CurrencyConverter\bin\Debug\netcoreapp2.2\CurrencyConverter.runtimeconfig.json
+D:\Nick\VS Code\CurrencyConverter\bin\Debug\netcoreapp2.2\CurrencyConverter.runtimeconfig.dev.json
+D:\Nick\VS Code\CurrencyConverter\bin\Debug\netcoreapp2.2\CurrencyConverter.dll
+D:\Nick\VS Code\CurrencyConverter\bin\Debug\netcoreapp2.2\CurrencyConverter.pdb
+D:\Nick\VS Code\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.csprojAssemblyReference.cache
+D:\Nick\VS Code\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.csproj.CoreCompileInputs.cache
+D:\Nick\VS Code\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.AssemblyInfoInputs.cache
+D:\Nick\VS Code\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.AssemblyInfo.cs
+D:\Nick\VS Code\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.dll
+D:\Nick\VS Code\CurrencyConverter\obj\Debug\netcoreapp2.2\CurrencyConverter.pdb

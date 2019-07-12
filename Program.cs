@@ -9,9 +9,6 @@ namespace CurrencyConverter
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(WebScapper.ReturnWebRateData());
-            //Console.WriteLine(myList[0].CurrencyCode);
-            Currency USD = new Currency("USD", 840, "United States dollar");
             bool quit = false;
             string choice;
             do{
@@ -22,14 +19,18 @@ namespace CurrencyConverter
 
                 switch(choice) {
                     case "1":
-                        Currency.exchangeProcess();
+                        Currency.ExchangeProcess();
                         break;
 
                     case "2":
-                        Intro.Help();
+                        Intro.List();
                         break;
 
                     case "3":
+                        Intro.Help();
+                        break;
+
+                    case "4":
                         quit = true;
                         break;
                     
@@ -38,7 +39,8 @@ namespace CurrencyConverter
                         break;
                     }
                 
-                Console.Clear();
+                Console.WriteLine("+-----------------------------------+");
+                // Console.Clear();
                     
                 } while (quit == false);
 

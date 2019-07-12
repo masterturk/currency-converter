@@ -1,7 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using System;
 
 namespace CurrencyConverter
 {
@@ -32,7 +32,7 @@ namespace CurrencyConverter
         // From:    https://en.wikipedia.org/wiki/ISO_4217
         public static List<Currency> ISO4217()
         {
-            Currency XUA = new Currency("XUA", 965, "ADB Unit of Account");
+            // Currency XUA = new Currency("XUA", 965, "ADB Unit of Account");
             Currency AFN = new Currency("AFN", 971, "Afghan afghani");
             Currency ALL = new Currency("ALL", 8, "Albanian lek");
             Currency DZD = new Currency("DZD", 12, "Algerian dinar");
@@ -50,7 +50,7 @@ namespace CurrencyConverter
             Currency BZD = new Currency("BZD", 84, "Belize dollar");
             Currency BMD = new Currency("BMD", 60, "Bermudian dollar");
             Currency BTN = new Currency("BTN", 64, "Bhutanese ngultrum");
-            Currency BOV = new Currency("BOV", 984, "Bolivian Mvdol (funds code)");
+            // Currency BOV = new Currency("BOV", 984, "Bolivian Mvdol (funds code)");
             Currency BOB = new Currency("BOB", 68, "Boliviano");
             Currency BAM = new Currency("BAM", 977, "Bosnia and Herzegovina convertible mark");
             Currency BWP = new Currency("BWP", 72, "Botswana pula");
@@ -66,7 +66,7 @@ namespace CurrencyConverter
             Currency XAF = new Currency("XAF", 950, "CFA franc BEAC");
             Currency XPF = new Currency("XPF", 953, "CFP franc (franc Pacifique)");
             Currency CLP = new Currency("CLP", 152, "Chilean peso");
-            Currency XTS = new Currency("XTS", 963, "Code reserved for testing");
+            // Currency XTS = new Currency("XTS", 963, "Code reserved for testing");
             Currency COP = new Currency("COP", 170, "Colombian peso");
             Currency KMF = new Currency("KMF", 174, "Comoro franc");
             Currency CDF = new Currency("CDF", 976, "Congolese franc");
@@ -83,10 +83,10 @@ namespace CurrencyConverter
             Currency ERN = new Currency("ERN", 232, "Eritrean nakfa");
             Currency ETB = new Currency("ETB", 230, "Ethiopian birr");
             Currency EUR = new Currency("EUR", 978, "Euro");
-            Currency XBA = new Currency("XBA", 955, "European Composite Unit (EURCO) (bond market unit)");
-            Currency XBB = new Currency("XBB", 956, "European Monetary Unit (E.M.U.-6) (bond market unit)");
-            Currency XBD = new Currency("XBD", 958, "European Unit of Account 17 (E.U.A.-17) (bond market unit)");
-            Currency XBC = new Currency("XBC", 957, "European Unit of Account 9 (E.U.A.-9) (bond market unit)");
+            // Currency XBA = new Currency("XBA", 955, "European Composite Unit (EURCO) (bond market unit)");
+            // Currency XBB = new Currency("XBB", 956, "European Monetary Unit (E.M.U.-6) (bond market unit)");
+            // Currency XBD = new Currency("XBD", 958, "European Unit of Account 17 (E.U.A.-17) (bond market unit)");
+            // Currency XBC = new Currency("XBC", 957, "European Unit of Account 9 (E.U.A.-9) (bond market unit)");
             Currency FKP = new Currency("FKP", 238, "Falkland Islands pound");
             Currency FJD = new Currency("FJD", 242, "Fiji dollar");
             Currency GMD = new Currency("GMD", 270, "Gambian dalasi");
@@ -128,7 +128,7 @@ namespace CurrencyConverter
             Currency MRU = new Currency("MRU", 929, "Mauritanian ouguiya");
             Currency MUR = new Currency("MUR", 480, "Mauritian rupee");
             Currency MXN = new Currency("MXN", 484, "Mexican peso");
-            Currency MXV = new Currency("MXV", 979, "Mexican Unidad de Inversion (UDI) (funds code)");
+            // Currency MXV = new Currency("MXV", 979, "Mexican Unidad de Inversion (UDI) (funds code)");
             Currency MDL = new Currency("MDL", 498, "Moldovan leu");
             Currency MNT = new Currency("MNT", 496, "Mongolian tögrög");
             Currency MAD = new Currency("MAD", 504, "Moroccan dirham");
@@ -146,7 +146,7 @@ namespace CurrencyConverter
             Currency NOK = new Currency("NOK", 578, "Norwegian krone");
             Currency OMR = new Currency("OMR", 512, "Omani rial");
             Currency PKR = new Currency("PKR", 586, "Pakistani rupee");
-            Currency XPD = new Currency("XPD", 964, "Palladium (one troy ounce)");
+            // Currency XPD = new Currency("XPD", 964, "Palladium (one troy ounce)");
             Currency PAB = new Currency("PAB", 590, "Panamanian balboa");
             Currency PGK = new Currency("PGK", 598, "Papua New Guinean kina");
             Currency PYG = new Currency("PYG", 600, "Paraguayan guaraní");
@@ -195,26 +195,26 @@ namespace CurrencyConverter
             Currency UGX = new Currency("UGX", 800, "Ugandan shilling");
             Currency UAH = new Currency("UAH", 980, "Ukrainian hryvnia");
             Currency CLF = new Currency("CLF", 990, "Unidad de Fomento (funds code)");
-            Currency COU = new Currency("COU", 970, "Unidad de Valor Real (UVR) (funds code)");
+            // Currency COU = new Currency("COU", 970, "Unidad de Valor Real (UVR) (funds code)");
             Currency UYW = new Currency("UYW", 927, "Unidad previsional");
             Currency AED = new Currency("AED", 784, "United Arab Emirates dirham");
             Currency USD = new Currency("USD", 840, "United States dollar");
-            Currency USN = new Currency("USN", 997, "United States dollar (next day) (funds code)");
-            Currency UYI = new Currency("UYI", 940, "Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)");
+            // Currency USN = new Currency("USN", 997, "United States dollar (next day) (funds code)");
+            // Currency UYI = new Currency("UYI", 940, "Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)");
             Currency UYU = new Currency("UYU", 858, "Uruguayan peso");
             Currency UZS = new Currency("UZS", 860, "Uzbekistan som");
             Currency VUV = new Currency("VUV", 548, "Vanuatu vatu");
             Currency VES = new Currency("VES", 928, "Venezuelan bolívar soberano");
             Currency VND = new Currency("VND", 704, "Vietnamese ??ng");
-            Currency CHE = new Currency("CHE", 947, "WIR Euro (complementary currency)");
-            Currency CHW = new Currency("CHW", 948, "WIR Franc (complementary currency)");
+            // Currency CHE = new Currency("CHE", 947, "WIR Euro (complementary currency)");
+            // Currency CHW = new Currency("CHW", 948, "WIR Franc (complementary currency)");
             Currency YER = new Currency("YER", 886, "Yemeni rial");
             Currency ZMW = new Currency("ZMW", 967, "Zambian kwacha");
             Currency ZWL = new Currency("ZWL", 932, "Zimbabwean dollar");
 
 
             List<Currency> currencyList = new List<Currency>();
-            currencyList.Add(XUA);
+            // currencyList.Add(XUA);
             currencyList.Add(AFN);
             currencyList.Add(ALL);
             currencyList.Add(DZD);
@@ -232,7 +232,7 @@ namespace CurrencyConverter
             currencyList.Add(BZD);
             currencyList.Add(BMD);
             currencyList.Add(BTN);
-            currencyList.Add(BOV);
+            // currencyList.Add(BOV);
             currencyList.Add(BOB);
             currencyList.Add(BAM);
             currencyList.Add(BWP);
@@ -248,7 +248,7 @@ namespace CurrencyConverter
             currencyList.Add(XAF);
             currencyList.Add(XPF);
             currencyList.Add(CLP);
-            currencyList.Add(XTS);
+            // currencyList.Add(XTS);
             currencyList.Add(COP);
             currencyList.Add(KMF);
             currencyList.Add(CDF);
@@ -265,10 +265,10 @@ namespace CurrencyConverter
             currencyList.Add(ERN);
             currencyList.Add(ETB);
             currencyList.Add(EUR);
-            currencyList.Add(XBA);
-            currencyList.Add(XBB);
-            currencyList.Add(XBD);
-            currencyList.Add(XBC);
+            // currencyList.Add(XBA);
+            // currencyList.Add(XBB);
+            // currencyList.Add(XBD);
+            // currencyList.Add(XBC);
             currencyList.Add(FKP);
             currencyList.Add(FJD);
             currencyList.Add(GMD);
@@ -310,7 +310,7 @@ namespace CurrencyConverter
             currencyList.Add(MRU);
             currencyList.Add(MUR);
             currencyList.Add(MXN);
-            currencyList.Add(MXV);
+            // currencyList.Add(MXV);
             currencyList.Add(MDL);
             currencyList.Add(MNT);
             currencyList.Add(MAD);
@@ -328,7 +328,7 @@ namespace CurrencyConverter
             currencyList.Add(NOK);
             currencyList.Add(OMR);
             currencyList.Add(PKR);
-            currencyList.Add(XPD);
+            // currencyList.Add(XPD);
             currencyList.Add(PAB);
             currencyList.Add(PGK);
             currencyList.Add(PYG);
@@ -377,19 +377,19 @@ namespace CurrencyConverter
             currencyList.Add(UGX);
             currencyList.Add(UAH);
             currencyList.Add(CLF);
-            currencyList.Add(COU);
+            // currencyList.Add(COU);
             currencyList.Add(UYW);
             currencyList.Add(AED);
             currencyList.Add(USD);
-            currencyList.Add(USN);
-            currencyList.Add(UYI);
+            // currencyList.Add(USN);
+            // currencyList.Add(UYI);
             currencyList.Add(UYU);
             currencyList.Add(UZS);
             currencyList.Add(VUV);
             currencyList.Add(VES);
             currencyList.Add(VND);
-            currencyList.Add(CHE);
-            currencyList.Add(CHW);
+            // currencyList.Add(CHE);
+            // currencyList.Add(CHW);
             currencyList.Add(YER);
             currencyList.Add(ZMW);
             currencyList.Add(ZWL);
@@ -397,29 +397,72 @@ namespace CurrencyConverter
             return currencyList;
         }
 
-        // Parses a string of latest exchange rates to EUR via fixer.io
-        public static double parseData(Currency Currency)
+         // Prints out Currency Names and Codes
+        public static void PrintList()
         {
-            double amount = 0.0;
-            //Scrapes Web Data to get the rates.
-            string jsonOriginal = WebScapper.ReturnWebRateData();
-            //Removes the headers
-            string[] splitInformation = jsonOriginal.Split('{','}');
-            //Our current Data can then be split into "Name : Rate"
-            string[] rows = splitInformation[2].Split(',');
-             foreach (var row in rows)
-            { 
-                //Gets rid of spaces and new line characters
-                string line = row.Trim();
-                //Gets the currency code name
-                string name = line.Substring(1,3);
-                if (name == Currency.CurrencyCode) {
-                    //and extracts the amount
-                    amount = Convert.ToDouble(line.Substring(6));
-                    return amount;
+            List<Currency> currencyList = Currency.ISO4217();
+            for (int i = 0; i < 164; i++)
+            {
+                Console.WriteLine($"Currency Name: {currencyList[i].CurrencyName}");
+                Console.WriteLine($"Currency Code: {currencyList[i].CurrencyCode}");
+                Console.WriteLine();
+            }
+        }
+
+        // Validates an entered code is a legitimate code
+        public static bool ValidCurrencyCode(string code)
+        {
+            bool valid = false;
+            List<Currency> currencyList = Currency.ISO4217();
+            for (int i = 0; i < 164; i++)
+            {
+                if (currencyList[i].CurrencyCode == code)
+                {
+                    valid = true;
+                    return valid;
                 }
             }
-            return 0;   
+            return valid;
+        }
+
+        // Parses a string of latest exchange rates to EUR via fixer.io
+        public static double ParseData(Currency Currency)
+        {
+            try
+            {
+                double amount = 0.0;
+                //Scrapes Web Data to get the rates.
+                string jsonOriginal = WebScapper.ReturnWebRateData();
+                //Removes the headers
+                string[] splitInformation = jsonOriginal.Split('{','}');
+                //Our current Data can then be split into "Name : Rate"
+                string[] rows = splitInformation[2].Split(',');
+                foreach (var row in rows)
+                { 
+                    //Gets rid of spaces and new line characters
+                    string line = row.Trim();
+                    //Gets the currency code name
+                    string name = line.Substring(1,3);
+                    if (name == Currency.CurrencyCode) 
+                    {
+                        //and extracts the amount
+                        amount = Convert.ToDouble(line.Substring(6));
+                        return amount;
+                    }
+                }
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine("Something went wrong.");
+                return 0;
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine("Something went wrong.");
+                return 0;
+            }
+            Console.WriteLine("Something went wrong.");
+            return 0;
         }
 
         // Converts one currency to another via the Euro exchange rate from fixer.io
@@ -430,47 +473,64 @@ namespace CurrencyConverter
         }
 
         // Default Currency Not Found Error
-        public static string CurrencyNotFound(string message)
+        private static string CurrencyNotFound()
         {
-            return "The currency you requested could not be found at this time.";
-        }
-        public static string chooseFirstCurrency() {
-            string choice;
-            Console.Write("What is the code you will be exchanging from? ");
-            choice = Console.ReadLine();
-            return choice;
-        }
-        public static string chooseSecondCurrency() {
-            string choice;
-            Console.Write("What is the code you will be exchanging to? ");
-            choice = Console.ReadLine();
-            return choice;
+            return "The currency you requested could not be found at this time. \nThe code has been entered incorrectly or there is a problem with our API." +
+            "\nYou will now be returned to the main menu.";
         }
 
-        public static void exchangeProcess() {
-            List<Currency> myList = Currency.ISO4217();
-            string first = chooseFirstCurrency();
-            string second = chooseSecondCurrency();
-            double firstRate = Currency.parseData(myList.Find(x => (x.CurrencyCode == first)));
-            double secondRate = Currency.parseData(myList.Find(x => (x.CurrencyCode == second)));
-            //Get the name of the currency
-            var moneyName = myList.Find(y => (y.CurrencyCode == second));
-            //Calculation 
-            double exchange = ConvertCurrency(firstRate,secondRate);
-            //Print result
-            Console.WriteLine($"Your exchange rate is: {exchange} {moneyName.CurrencyName}s");
-            Console.WriteLine("Press Enter to return to the menu");
-            Console.ReadLine();
-
-
-
-
-
-
-
-
+        // Interfaces with Console to grab user entered codes
+        public static string UserInput() {
+            Console.Write("Enter the code you will be exchanging from: ");
+            string input = Console.ReadLine();
+            if (ValidCurrencyCode(input) == false)
+            {
+                Console.WriteLine(CurrencyNotFound());
+                return "-1";
+            }
+            return input;
         }
-        
 
+        // Leverages other functions to output the exchage rate
+        public static void ExchangeProcess() {
+            try
+            {
+                // Creates List of Currency Object
+                List<Currency> myList = Currency.ISO4217();
+                // Grabs input & validates bad data
+                string first = UserInput();
+                if (first == "-1")
+                {
+                    return;
+                }
+                string second = UserInput();
+                if (second == "-1")
+                {
+                    return;
+                }
+                // Finds Currency objects matching user input
+                double firstRate = Currency.ParseData(myList.Find(x => (x.CurrencyCode == first)));
+                double secondRate = Currency.ParseData(myList.Find(x => (x.CurrencyCode == second)));
+                //Get the name of the currency
+                var firstMoneyName = myList.Find(y => (y.CurrencyCode == first));
+                var secondMoneyName = myList.Find(y => (y.CurrencyCode == second));
+                //Calculation 
+                double exchange = ConvertCurrency(firstRate,secondRate);
+                //Print result
+                Console.WriteLine($"The {firstMoneyName.CurrencyCode} to {secondMoneyName.CurrencyCode} exchange rate is: 1 {firstMoneyName.CurrencyName} to {exchange} {secondMoneyName.CurrencyName}s");
+                Console.WriteLine("Press Enter to return to the menu");
+                Console.ReadLine();
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine(CurrencyNotFound());
+                return;
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine(CurrencyNotFound());
+                return;
+            }
+        }
     }
 }
