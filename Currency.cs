@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
+using System;
 
 namespace CurrencyConverter
 {
@@ -394,6 +396,30 @@ namespace CurrencyConverter
 
             return currencyList;
         }
+
+        			
+        public static double parseData(Currency Currency)
+        {
+            double amount = 0.0;
+            //Scrapes Web Data to get the rates.
+            string jsonOriginal = WebScapper.ReturnWebRateData();
+            //Removes the headers
+            string[] splitInformation = jsonOriginal.Split('{','}');
+            //Our current Data can then be split into "Name : Rate"
+            string[] rows = splitInformation[2].Split(',');
+             foreach (var row in rows)
+            { 
+                string line = row.Trim();
+                string name = line.Substring(1,3);
+                if (name == Currency.CurrencyCode) {
+                    amount = Convert.ToDouble(line.Substring(6));
+                
+                }
+            }
+            return amount;   
+                
+        }
+            
 
         /*
         // Returns the exchange rate from Yahoo

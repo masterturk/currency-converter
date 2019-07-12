@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\CurrencyConverter.csproj": {}
+    "C:\\Users\\IsaacCampbell\\repos\\CurrencyConverter\\CurrencyConverter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\CurrencyConverter.csproj": {
+    "C:\\Users\\IsaacCampbell\\repos\\CurrencyConverter\\CurrencyConverter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\CurrencyConverter.csproj",
+        "projectUniqueName": "C:\\Users\\IsaacCampbell\\repos\\CurrencyConverter\\CurrencyConverter.csproj",
         "projectName": "CurrencyConverter",
-        "projectPath": "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\CurrencyConverter.csproj",
-        "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\obj\\",
+        "projectPath": "C:\\Users\\IsaacCampbell\\repos\\CurrencyConverter\\CurrencyConverter.csproj",
+        "packagesPath": "C:\\Users\\IsaacCampbell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IsaacCampbell\\repos\\CurrencyConverter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IsaacCampbell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
