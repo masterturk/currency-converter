@@ -397,7 +397,7 @@ namespace CurrencyConverter
             return currencyList;
         }
 
-        			
+        // Parses a string of latest exchange rates to EUR via fixer.io
         public static double parseData(Currency Currency)
         {
             double amount = 0.0;
@@ -413,33 +413,11 @@ namespace CurrencyConverter
                 string name = line.Substring(1,3);
                 if (name == Currency.CurrencyCode) {
                     amount = Convert.ToDouble(line.Substring(6));
-                
+                    return amount;
                 }
             }
-            return amount;   
-                
+            return 0;   
         }
-            
-
-        /*
-        // Returns the exchange rate from Yahoo
-        public static var YahooRate(Currency currency1, Currency currency2)
-        {
-            
-        }
-
-        // Converts one currency to another via the exchange rate from Yahoo
-        public static double YahooConvert(Currency currency1, Currency currency2)
-        {
-
-        }
-
-        // Returns the exchange rate from Google
-        public static double GoogleRate(Currency currency1, Currency currency2)
-        {
-
-        }
-        */
 
         // Converts one currency to another via the Euro exchange rate from fixer.io
         public static double ConvertCurrency(double currencyValue1, double currencyValue2)
