@@ -29,7 +29,7 @@ namespace CurrencyConverter
 
         
         // Creates a List of all ISO 4217 Currencies
-        // From: https://en.wikipedia.org/wiki/ISO_4217
+        // From:    https://en.wikipedia.org/wiki/ISO_4217
         public static List<Currency> ISO4217()
         {
             Currency XUA = new Currency("XUA", 965, "ADB Unit of Account");
@@ -409,9 +409,12 @@ namespace CurrencyConverter
             string[] rows = splitInformation[2].Split(',');
              foreach (var row in rows)
             { 
+                //Gets rid of spaces and new line characters
                 string line = row.Trim();
+                //Gets the currency code name
                 string name = line.Substring(1,3);
                 if (name == Currency.CurrencyCode) {
+                    //and extracts the amount
                     amount = Convert.ToDouble(line.Substring(6));
                     return amount;
                 }
@@ -430,6 +433,42 @@ namespace CurrencyConverter
         public static string CurrencyNotFound(string message)
         {
             return "The currency you requested could not be found at this time.";
+        }
+        public static string chooseFirstCurrency() {
+            string choice;
+            Console.Write("What is the code you will be exchanging from? ");
+            choice = Console.ReadLine();
+            return choice;
+        }
+        public static string chooseSecondCurrency() {
+            string choice;
+            Console.Write("What is the code you will be exchanging to? ");
+            choice = Console.ReadLine();
+            return choice;
+        }
+
+        public static void exchangeProcess() {
+            List<Currency> myList = Currency.ISO4217();
+            string first = chooseFirstCurrency();
+            string second = chooseSecondCurrency();
+            double firstRate = Currency.parseData(myList.Find(x => (x.CurrencyCode == first)));
+            double secondRate = Currency.parseData(myList.Find(x => (x.CurrencyCode == second)));
+            //Get the name of the currency
+            var moneyName = myList.Find(y => (y.CurrencyCode == second));
+            //Calculation 
+            double exchange = ConvertCurrency(firstRate,secondRate);
+            //Print result
+            Console.WriteLine($"Your exchange rate is: {exchange} {moneyName.CurrencyName}s");
+            Console.WriteLine("Press Enter to return to the menu");
+            Console.ReadLine();
+
+
+
+
+
+
+
+
         }
         
 
