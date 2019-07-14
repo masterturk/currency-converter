@@ -397,15 +397,33 @@ namespace CurrencyConverter
             return currencyList;
         }
 
-         // Prints out Currency Names and Codes
+        // Prints out Currency Names and Codes
         public static void PrintList()
         {
             List<Currency> currencyList = Currency.ISO4217();
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("|               Currency Name              | Currency Code |");
+            Console.WriteLine("------------------------------------------------------------");
+
             for (int i = 0; i < 164; i++)
             {
-                Console.WriteLine($"Currency Name: {currencyList[i].CurrencyName}");
-                Console.WriteLine($"Currency Code: {currencyList[i].CurrencyCode}");
-                Console.WriteLine();
+                int nameLength = currencyList[i].CurrencyName.Length;
+                string moneyName = currencyList[i].CurrencyName;
+                int codeLength = currencyList[i].CurrencyCode.Length;
+                string moneyCode = currencyList[i].CurrencyCode;
+                if (nameLength <= 39)
+                {
+                    for (int j = 0; j <= 39 - nameLength; j++)
+                    {
+                        moneyName = moneyName + " ";
+                    }
+                    moneyCode = "     " + moneyCode + "     ";
+                } else
+                {
+                    moneyCode = "     " + moneyCode + "     ";
+                }
+                Console.WriteLine($"| {moneyName} | {moneyCode} |");
+                Console.WriteLine("------------------------------------------------------------");
             }
         }
 
