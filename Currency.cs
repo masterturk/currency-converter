@@ -498,7 +498,19 @@ namespace CurrencyConverter
         }
 
         // Interfaces with Console to grab user entered codes
-        public static string UserInput() {
+        public static string UserCodeInput() {
+            string input = Console.ReadLine();
+            input = input.ToUpper();
+            if (ValidCurrencyCode(input) == false)
+            {
+                Console.WriteLine(CurrencyNotFound());
+                return "-1";
+            }
+            return input;
+        }
+
+        // Interfaces with Console to grab user entered codes
+        public static string UserYesNoInput() {
             Console.Write("Enter the code you will be exchanging from: ");
             string input = Console.ReadLine();
             input = input.ToUpper();
@@ -517,12 +529,14 @@ namespace CurrencyConverter
                 // Creates List of Currency Object
                 List<Currency> myList = Currency.ISO4217();
                 // Grabs input & validates bad data
-                string first = UserInput();
+                Console.Write("Enter the code you will be exchanging from: ");
+                string first = UserCodeInput();
                 if (first == "-1")
                 {
                     return;
                 }
-                string second = UserInput();
+                Console.Write("Enter the code you will be exchanging to: ");
+                string second = UserCodeInput();
                 if (second == "-1")
                 {
                     return;
@@ -538,8 +552,40 @@ namespace CurrencyConverter
                 exchange = Math.Round(exchange, 2);
                 //Print result
                 Console.WriteLine($"The {firstMoneyName.CurrencyCode} to {secondMoneyName.CurrencyCode} exchange rate is: 1 {firstMoneyName.CurrencyName} to {exchange} {secondMoneyName.CurrencyName}s");
-                Console.WriteLine("Press Enter to return to the menu");
-                Console.ReadLine();
+                Console.Write("Would you like to convert a specific amount? (y/n): ");
+                string response = Console.ReadLine().ToLower();
+                if (response == "y" || response == "yes")
+                {
+                    Console.Write($"Please enter an amount you would like to convert (from {firstMoneyName.CurrencyCode} to {secondMoneyName.CurrencyCode}): ");
+                    string input = Console.ReadLine();
+                    double x = Double.Parse(input);
+                    if (x == 0)
+                    {
+                        Console.WriteLine("Response is not valid.");
+                        Console.WriteLine("Press Enter to return to the menu.");
+                        Console.ReadLine();
+                        return; 
+                    } else
+                    {
+                    exchange = exchange * x;
+                    exchange = Math.Round(exchange, 2);
+                    Console.WriteLine($"{x} {firstMoneyName.CurrencyName}s is worth {exchange} {secondMoneyName.CurrencyName}s");
+                    Console.WriteLine("Press Enter to return to the menu.");
+                    Console.ReadLine();
+                    return;
+                    }
+                } else if (response == "n" || response == "no")
+                {
+                    Console.WriteLine("Press Enter to return to the menu.");
+                    Console.ReadLine();
+                    return;
+                } else
+                {
+                    Console.WriteLine("Response is not valid.");
+                    Console.WriteLine("Press Enter to return to the menu.");
+                    Console.ReadLine();
+                    return;
+                }
             }
             catch (System.NullReferenceException)
             {
