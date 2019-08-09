@@ -125,7 +125,7 @@ namespace CurrencyConverter
             Currency MWK = new Currency("MWK", 454, "Malawian Kwacha");
             Currency MYR = new Currency("MYR", 458, "Malaysian Ringgit");
             Currency MVR = new Currency("MVR", 462, "Maldivian Rufiyaa");
-            Currency MRU = new Currency("MRU", 929, "Mauritanian Ouguiya");
+            // Currency MRU = new Currency("MRU", 929, "Mauritanian Ouguiya");
             Currency MUR = new Currency("MUR", 480, "Mauritian Rupee");
             Currency MXN = new Currency("MXN", 484, "Mexican Peso");
             // Currency MXV = new Currency("MXV", 979, "Mexican Unidad de Inversion (UDI) (funds code)");
@@ -152,7 +152,7 @@ namespace CurrencyConverter
             Currency PYG = new Currency("PYG", 600, "Paraguayan Guaraní");
             Currency PEN = new Currency("PEN", 604, "Peruvian Sol");
             Currency PHP = new Currency("PHP", 608, "Philippine Peso");
-            Currency XPT = new Currency("XPT", 962, "Platinum (one troy ounce)");
+            // Currency XPT = new Currency("XPT", 962, "Platinum (one troy ounce)");
             Currency PLN = new Currency("PLN", 985, "Polish Zloty");
             Currency GBP = new Currency("GBP", 826, "Pound Sterling");
             Currency QAR = new Currency("QAR", 634, "Qatari Riyal");
@@ -173,17 +173,17 @@ namespace CurrencyConverter
             Currency SOS = new Currency("SOS", 706, "Somali Shilling");
             Currency ZAR = new Currency("ZAR", 710, "South African Rand");
             Currency KRW = new Currency("KRW", 410, "South Korean Won");
-            Currency SSP = new Currency("SSP", 728, "South Sudanese Pound");
+            // Currency SSP = new Currency("SSP", 728, "South Sudanese Pound");
             Currency XDR = new Currency("XDR", 960, "Special Drawing Rights");
             Currency LKR = new Currency("LKR", 144, "Sri Lankan Rupee");
-            Currency XSU = new Currency("XSU", 994, "SUCRE");
+            // Currency XSU = new Currency("XSU", 994, "SUCRE");
             Currency SDG = new Currency("SDG", 938, "Sudanese Pound");
             Currency SRD = new Currency("SRD", 968, "Surinamese Dollar");
             Currency SZL = new Currency("SZL", 748, "Swazi Lilangeni");
             Currency SEK = new Currency("SEK", 752, "Swedish Krona/Kronor");
             Currency CHF = new Currency("CHF", 756, "Swiss Franc");
             Currency SYP = new Currency("SYP", 760, "Syrian Pound");
-            Currency STN = new Currency("STN", 930, "São Tomé and Príncipe Dobra");
+            // Currency STN = new Currency("STN", 930, "São Tomé and Príncipe Dobra");
             Currency TJS = new Currency("TJS", 972, "Tajikistani Somoni");
             Currency TZS = new Currency("TZS", 834, "Tanzanian Shilling");
             Currency THB = new Currency("THB", 764, "Thai Baht");
@@ -196,7 +196,7 @@ namespace CurrencyConverter
             Currency UAH = new Currency("UAH", 980, "Ukrainian Hryvnia");
             Currency CLF = new Currency("CLF", 990, "Unidad de Fomento (funds code)");
             // Currency COU = new Currency("COU", 970, "Unidad de Valor Real (UVR) (funds code)");
-            Currency UYW = new Currency("UYW", 927, "Unidad Previsional");
+            // Currency UYW = new Currency("UYW", 927, "Unidad Previsional");
             Currency AED = new Currency("AED", 784, "United Arab Emirates Dirham");
             Currency USD = new Currency("USD", 840, "United States Dollar");
             // Currency USN = new Currency("USN", 997, "United States dollar (next day) (funds code)");
@@ -204,7 +204,7 @@ namespace CurrencyConverter
             Currency UYU = new Currency("UYU", 858, "Uruguayan Peso");
             Currency UZS = new Currency("UZS", 860, "Uzbekistan Som");
             Currency VUV = new Currency("VUV", 548, "Vanuatu Vatu");
-            Currency VES = new Currency("VES", 928, "Venezuelan Bolívar Soberano");
+            // Currency VES = new Currency("VES", 928, "Venezuelan Bolívar Soberano");
             Currency VND = new Currency("VND", 704, "Vietnamese Dong");
             // Currency CHE = new Currency("CHE", 947, "WIR Euro (complementary currency)");
             // Currency CHW = new Currency("CHW", 948, "WIR Franc (complementary currency)");
@@ -307,7 +307,7 @@ namespace CurrencyConverter
             currencyList.Add(MWK);
             currencyList.Add(MYR);
             currencyList.Add(MVR);
-            currencyList.Add(MRU);
+            // currencyList.Add(MRU);
             currencyList.Add(MUR);
             currencyList.Add(MXN);
             // currencyList.Add(MXV);
@@ -334,7 +334,7 @@ namespace CurrencyConverter
             currencyList.Add(PYG);
             currencyList.Add(PEN);
             currencyList.Add(PHP);
-            currencyList.Add(XPT);
+            // currencyList.Add(XPT);
             currencyList.Add(PLN);
             currencyList.Add(GBP);
             currencyList.Add(QAR);
@@ -355,17 +355,17 @@ namespace CurrencyConverter
             currencyList.Add(SOS);
             currencyList.Add(ZAR);
             currencyList.Add(KRW);
-            currencyList.Add(SSP);
+            // currencyList.Add(SSP);
             currencyList.Add(XDR);
             currencyList.Add(LKR);
-            currencyList.Add(XSU);
+            // currencyList.Add(XSU);
             currencyList.Add(SDG);
             currencyList.Add(SRD);
             currencyList.Add(SZL);
             currencyList.Add(SEK);
             currencyList.Add(CHF);
             currencyList.Add(SYP);
-            currencyList.Add(STN);
+            // currencyList.Add(STN);
             currencyList.Add(TJS);
             currencyList.Add(TZS);
             currencyList.Add(THB);
@@ -378,7 +378,7 @@ namespace CurrencyConverter
             currencyList.Add(UAH);
             currencyList.Add(CLF);
             // currencyList.Add(COU);
-            currencyList.Add(UYW);
+            // currencyList.Add(UYW);
             currencyList.Add(AED);
             currencyList.Add(USD);
             // currencyList.Add(USN);
@@ -386,7 +386,7 @@ namespace CurrencyConverter
             currencyList.Add(UYU);
             currencyList.Add(UZS);
             currencyList.Add(VUV);
-            currencyList.Add(VES);
+            // currencyList.Add(VES);
             currencyList.Add(VND);
             // currencyList.Add(CHE);
             // currencyList.Add(CHW);
@@ -405,12 +405,12 @@ namespace CurrencyConverter
             Console.WriteLine("|               Currency Name              | Currency Code |");
             Console.WriteLine("------------------------------------------------------------");
 
-            for (int i = 0; i < 164; i++)
+            foreach (Currency currency in currencyList)
             {
-                int nameLength = currencyList[i].CurrencyName.Length;
-                string moneyName = currencyList[i].CurrencyName;
-                int codeLength = currencyList[i].CurrencyCode.Length;
-                string moneyCode = currencyList[i].CurrencyCode;
+                int nameLength = currency.CurrencyName.Length;
+                string moneyName = currency.CurrencyName;
+                int codeLength = currency.CurrencyCode.Length;
+                string moneyCode = currency.CurrencyCode;
                 if (nameLength <= 39)
                 {
                     for (int j = 0; j <= 39 - nameLength; j++)
