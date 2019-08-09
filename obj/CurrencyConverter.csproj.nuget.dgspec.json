@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\CurrencyConverter.csproj": {}
+    "C:\\Users\\Nick\\Documents\\VS Code\\YASH\\dotNET\\CurrencyConverter\\CurrencyConverter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\CurrencyConverter.csproj": {
+    "C:\\Users\\Nick\\Documents\\VS Code\\YASH\\dotNET\\CurrencyConverter\\CurrencyConverter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\CurrencyConverter.csproj",
+        "projectUniqueName": "C:\\Users\\Nick\\Documents\\VS Code\\YASH\\dotNET\\CurrencyConverter\\CurrencyConverter.csproj",
         "projectName": "CurrencyConverter",
-        "projectPath": "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\CurrencyConverter.csproj",
+        "projectPath": "C:\\Users\\Nick\\Documents\\VS Code\\YASH\\dotNET\\CurrencyConverter\\CurrencyConverter.csproj",
         "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nick\\Documents\\VS Code\\CurrencyConverter\\obj\\",
+        "outputPath": "C:\\Users\\Nick\\Documents\\VS Code\\YASH\\dotNET\\CurrencyConverter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
