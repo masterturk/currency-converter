@@ -21,7 +21,7 @@ namespace CurrencyConverter.Controllers
         [HttpGet]
         public ActionResult<List<Currency>> Get()
         {
-            List<Currency> currencyList = CurrencyService.getCurrencyList();
+            List<Currency> currencyList = CurrencyService.GetCurrencyList();
             return (currencyList);
         }
 

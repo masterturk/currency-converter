@@ -26,7 +26,7 @@ namespace CurrencyConverter
         }
 
         // Creates an Array of all Supported Currencies
-        public static List<Currency> getCurrencyList()
+        public static List<Currency> GetCurrencyList()
         {
             List<Currency> currencyList = new List<Currency>();
             string path = "Currency.json";
@@ -45,7 +45,7 @@ namespace CurrencyConverter
         // Prints out Currency Names and Codes
         public static void PrintList()
         {
-            List<Currency> currencyList = getCurrencyList();
+            List<Currency> currencyList = GetCurrencyList();
             Console.WriteLine("------------------------------------------------------------");
             Console.WriteLine("|               Currency Name              | Currency Code |");
             Console.WriteLine("------------------------------------------------------------");
@@ -77,7 +77,7 @@ namespace CurrencyConverter
         public static bool ValidCurrencyCode(string code)
         {
             bool valid = false;
-            List<Currency> currencyList = getCurrencyList();
+            List<Currency> currencyList = GetCurrencyList();
             for (int i = 0; i < 164; i++)
             {
                 if (currencyList[i].CurrencyCode == code)
@@ -176,7 +176,7 @@ namespace CurrencyConverter
             try
             {
                 // Creates List of Currency Object
-                List<Currency> myList = getCurrencyList();
+                List<Currency> myList = GetCurrencyList();
                 // Grabs input & validates bad data
                 Console.Write("Enter the code you will be exchanging from: ");
                 string first = UserCodeInput();
