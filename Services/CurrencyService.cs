@@ -4,16 +4,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+using System.Net;
 
 namespace CurrencyConverter
 {
-    public class Currency
+    public class CurrencyService
     {
-        public string CurrencyCode { get; set; }
-        public int CurrencyNum { get; set; }
-        public string CurrencyName { get; set; }
-        
         // Root Object for JSON Parse
         public class RootObject
         {
@@ -21,20 +17,12 @@ namespace CurrencyConverter
             public string number { get; set; }
             public string name { get; set; }
         }
-        // Constructor
-        public Currency()
-        {
-            this.CurrencyCode = null;
-            this.CurrencyNum = 000;
-            this.CurrencyName = null;
-        }
 
-        // Overloaded Constructor
-        public Currency(string currencyCode, int currencyNum, string currencyName)
+        // Creates a string of latest exchange rates to EUR via fixer.io
+        public static string ReturnWebRateData()
         {
-            this.CurrencyCode = currencyCode;
-            this.CurrencyNum = currencyNum;
-            this.CurrencyName = currencyName;
+            var json = new WebClient().DownloadString("http://data.fixer.io/api/latest?access_key=0dbbc6b1ed7d7b57392d9c3e5ce269c9&format=1");
+            return json;
         }
 
         // Creates an Array of all Supported Currencies
@@ -57,7 +45,7 @@ namespace CurrencyConverter
         // Prints out Currency Names and Codes
         public static void PrintList()
         {
-            List<Currency> currencyList = Currency.getCurrencyList();
+            List<Currency> currencyList = getCurrencyList();
             Console.WriteLine("------------------------------------------------------------");
             Console.WriteLine("|               Currency Name              | Currency Code |");
             Console.WriteLine("------------------------------------------------------------");
@@ -89,7 +77,7 @@ namespace CurrencyConverter
         public static bool ValidCurrencyCode(string code)
         {
             bool valid = false;
-            List<Currency> currencyList = Currency.getCurrencyList();
+            List<Currency> currencyList = getCurrencyList();
             for (int i = 0; i < 164; i++)
             {
                 if (currencyList[i].CurrencyCode == code)
@@ -108,7 +96,7 @@ namespace CurrencyConverter
             {
                 double amount = 0.0;
                 //Scrapes Web Data to get the rates.
-                string jsonOriginal = WebScapper.ReturnWebRateData();
+                string jsonOriginal = ReturnWebRateData();
                 //Removes the headers
                 string[] splitInformation = jsonOriginal.Split('{', '}');
                 //Our current Data can then be split into "Name : Rate"
@@ -188,7 +176,7 @@ namespace CurrencyConverter
             try
             {
                 // Creates List of Currency Object
-                List<Currency> myList = Currency.getCurrencyList();
+                List<Currency> myList = getCurrencyList();
                 // Grabs input & validates bad data
                 Console.Write("Enter the code you will be exchanging from: ");
                 string first = UserCodeInput();
@@ -203,8 +191,8 @@ namespace CurrencyConverter
                     return;
                 }
                 // Finds Currency objects matching user input
-                double firstRate = Currency.ParseData(myList.Find(x => (x.CurrencyCode == first)));
-                double secondRate = Currency.ParseData(myList.Find(x => (x.CurrencyCode == second)));
+                double firstRate = ParseData(myList.Find(x => (x.CurrencyCode == first)));
+                double secondRate = ParseData(myList.Find(x => (x.CurrencyCode == second)));
                 //Get the name of the currency
                 var firstMoneyName = myList.Find(y => (y.CurrencyCode == first));
                 var secondMoneyName = myList.Find(y => (y.CurrencyCode == second));
