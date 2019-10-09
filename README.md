@@ -1,6 +1,6 @@
 # CurrencyConverter
-REST API that provides real time currency conversions.
-Currently supports 157 currencies. Developed in  ASP.NET Core with C#.
+ASP.NET Core web API that provides real time currency conversions <br />
+Currently supports 157 currencies <br />
 
 # Endpoints
 /api/currency/ -> Returns Full Dictionary of Supported Currencies <br />
