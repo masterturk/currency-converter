@@ -1,3 +1,3 @@
 # CurrencyConverter
-Basic C# program that allows for real time currency conversion.
+ASP.NET Core REST API that provides real time currency conversions. 
 Currently supports 157 currencies.
