@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CurrencyConverter.Controllers
@@ -10,44 +8,69 @@ namespace CurrencyConverter.Controllers
     [ApiController]
     public class CurrencyController : ControllerBase
     {
-        // // GET api/currency
-        // [HttpGet]
-        // public ActionResult<IEnumerable<string>> Get()
-        // {
-        //     return new string[] { "value1", "value2" };
-        // }
-
         // GET api/currency
+        // Return List of Supported Currencies
+        /* 
+            {
+                "USD": {
+                    "currencyCode": "USD",
+                    "currencyNum": 840,
+                    "currencyName": "United States Dollar"
+                },
+                ...
+            }
+         */
         [HttpGet]
-        public ActionResult<List<Currency>> Get()
+        public ActionResult<Dictionary<string, Currency>> Get()
         {
-            List<Currency> currencyList = CurrencyService.GetCurrencyList();
-            return (currencyList);
+            var currencies = CurrencyService.GetCurrencies();
+            if (currencies == null) return NotFound();
+            return (currencies);
         }
 
-        // GET api/currency/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        // GET api/currency/usd
+        // Return Currency Info
+        /*
+            {
+                "currencyCode": "USD",
+                "currencyNum": 840,
+                "currencyName": "United States Dollar"
+            }
+         */
+        [HttpGet("{code}")]
+        public ActionResult<Currency> Get(string code)
         {
-            return "value";
+            if (code.Length != 3) return BadRequest();
+            code =code.ToUpper();
+            var currencies = CurrencyService.GetCurrencies();
+            if (currencies.ContainsKey(code)) {
+                var currency = currencies[code];
+                return currency;
+            } else {
+                return NotFound();
+            }
         }
 
-        // POST api/currency
-        [HttpPost]
-        public void Post([FromBody] string value)
+        // GET api/currency/usd/eur
+        // Return Conversion Rate (from 1 to 2)
+        [HttpGet("{code1}/{code2}")]
+        public ActionResult<double> Get(string code1, string code2)
         {
-        }
-
-        // PUT api/currency/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/currency/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            if (code2.Length != 3) return BadRequest();
+            if (code2.Length != 3) return BadRequest();
+            code1 =code1.ToUpper();
+            code2 =code2.ToUpper();
+            var currencies = CurrencyService.GetCurrencies();
+            if (currencies.ContainsKey(code1) && currencies.ContainsKey(code2)) {
+                var currency1 = currencies[code1];
+                var currency2 = currencies[code2];
+                double exchange = CurrencyService.ExchangeRate(currency1, currency2);
+                if (exchange == 0) return NotFound();
+                exchange = Math.Round(exchange, 2);
+                return exchange;
+            } else {
+                return NotFound();
+            }
         }
     }
 }
