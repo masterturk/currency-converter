@@ -52,9 +52,9 @@ namespace CurrencyConverter.Controllers
         }
 
         // GET api/currency/usd/eur
-        // Return Conversion Rate (from 1 to 2)
-        [HttpGet("{code1}/{code2}")]
-        public ActionResult<double> Get(string code1, string code2)
+        // Return Conversion Rate (1 unit of code1 is equal to _ units of code2)
+        [HttpGet("{code1}/{code2}/{num}")]
+        public ActionResult<double> Get(string code1, string code2, int num)
         {
             if (code2.Length != 3) return BadRequest();
             if (code2.Length != 3) return BadRequest();
@@ -66,7 +66,7 @@ namespace CurrencyConverter.Controllers
                 var currency2 = currencies[code2];
                 double exchange = CurrencyService.ExchangeRate(currency1, currency2);
                 if (exchange == 0) return NotFound();
-                exchange = Math.Round(exchange, 2);
+                exchange = Math.Round(exchange, num);
                 return exchange;
             } else {
                 return NotFound();

@@ -89,7 +89,6 @@ namespace CurrencyConverter
                 if (firstRate == 0 || secondRate == 0) return 0;
                 //Calculation 
                 double exchange = ConvertCurrency(firstRate, secondRate);
-                exchange = Math.Round(exchange, 2);
                 return exchange;
         }
     }
