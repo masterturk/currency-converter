@@ -16,8 +16,11 @@ Note: the api has a Self Signed Certificate so here is the solution:
   2. If using Postman go to File -> Settings -> SSL Certificate verification -> Off
 
 # Endpoints
-/api/currency/ -> Returns Full Dictionary of Supported Currencies <br />
-/api/currency/{code} -> Returns Specified Currency Object <br />
-- example code: USD <br />
-/api/currency/{code}/{code}/{num} -> Returns Conversion Rate <br />
-- example: USD, EUR, 2 (Convert USD to EUR and round the exchange rate to 2 decimals) <br />
+**/api/currency/ <br />**
+*-> Returns Full Dictionary of Supported Currencies <br />*
+
+**/api/currency/{code} <br />**
+*-> Returns Specified Currency Object (example code: USD)<br />*
+
+**/api/currency/{code}/{code}/{num}<br />**
+*-> Returns Conversion Rate(example: USD, EUR, 2 (Convert USD to EUR and round the exchange rate to 2 decimals)) <br />*
