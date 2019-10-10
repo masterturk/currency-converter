@@ -17,5 +17,7 @@ Note: the api has a Self Signed Certificate so here is the solution:
 
 # Endpoints
 /api/currency/ -> Returns Full Dictionary of Supported Currencies <br />
-/api/currency/### -> Returns Specified Currency Object <br />
-/api/currency/###/### -> Returns Conversion Rate 
+/api/currency/{code} -> Returns Specified Currency Object <br />
+- example code: USD <br />
+/api/currency/{code}/{code}/{num} -> Returns Conversion Rate <br />
+- example: USD, EUR, 2 (Convert USD to EUR and round the exchange rate to 2 decimals) <br />
